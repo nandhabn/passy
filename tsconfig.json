@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "@containers/*": ["src/containers/*"],
+      "@componets/*": ["src/components/*"]
+    },
+    "traceResolution": true,
+    "moduleResolution": "Node",
+    "jsx": "react-native",
+    "outDir": "./out"
+  },
+  "exclude": ["node_modules", "android", "ios"]
+}

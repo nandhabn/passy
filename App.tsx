@@ -19,19 +19,15 @@ import {
   DarkTheme,
   DefaultTheme,
 } from '@react-navigation/native';
-import {Router} from './src/router';
+import { Router } from './src/router';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
-  const backgroundStyle = {
-    // backgroundColor: 'gray',
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar />
+    <SafeAreaView style={styles.backgroundStyle}>
       <NavigationContainer theme={isDarkMode ? DarkTheme : DefaultTheme}>
+        <StatusBar />
         <Router />
       </NavigationContainer>
     </SafeAreaView>
@@ -39,21 +35,8 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  backgroundStyle: {
+    flex: 1,
   },
 });
 

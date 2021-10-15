@@ -17,8 +17,9 @@ module.exports = {
           '.json',
         ],
         alias: {
-          '@containers': 'passy/src/containers/',
-          '@components': 'passy/src/components/',
+          '@containers': 'passy/src/containers',
+          '@componets': 'passy/src/components',
+          '@utils': 'passy/src/utils',
         },
       },
     ],

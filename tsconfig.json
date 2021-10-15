@@ -1,17 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "esnext",
     "allowSyntheticDefaultImports": true,
-    "allowJs": true,
+    "allowJs": false,
     "baseUrl": "./",
     "paths": {
       "@containers/*": ["src/containers/*"],
-      "@componets/*": ["src/components/*"]
+      "@componets/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"],
     },
     "traceResolution": true,
     "moduleResolution": "Node",
     "jsx": "react-native",
-    "outDir": "./out"
+    "outDir": "./out",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "lib": ["es6"],
+    "noEmit": true,
+    "strict": true,
   },
   "exclude": ["node_modules", "android", "ios"]
 }
